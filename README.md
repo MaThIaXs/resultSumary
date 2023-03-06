@@ -31,7 +31,7 @@ Mobile<br>
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-result-summary-H9RCo5wl2U)
 - Live Site URL: (https://mathiaxs.github.io/resultSumary/)
 
 ## My process
