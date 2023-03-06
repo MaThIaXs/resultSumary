@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+/*Primary*/
+--veryLightRed: hsl(0, 100%, 67%, 10%);
+--veryOrangeYellow: hsl(39, 100%, 56%, 10%);
+--veryGreenTeal: hsl(166, 100%, 37%, 10%);
+--veryCobaltBlue: hsl(234, 85%, 45%, 10%);
+
+--lightRed: hsl(0, 100%, 67%);
+--orangeYellow: hsl(39, 100%, 56%);
+--greenTeal: hsl(166, 100%, 37%);
+--cobaltBlue: hsl(234, 85%, 45%);
+
+/*Gradients*/
+--lightSlateBlue: hsl(252, 100%, 67%);
+--lightRoyalBlue: hsl(241, 81%, 54%);
+
+--violetBlue: hsla(256, 72%, 46%, 1);
+--persianBlue: hsla(241, 72%, 46%, 0);
+
+/*Neutral*/
+--white: hsl(0, 0%, 100%);
+--paleBlue: hsl(221, 100%, 96%);
+--lightLavender: hsl(241, 100%, 89%);
+--darkGrayBlue: hsl(224, 30%, 27%);
+--lightGrayBlue: hsl(224, 30%, 27%, 45%);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+
+/*--Result--*/
+
+.result {
+    background-image: linear-gradient(var(--lightSlateBlue), var(--lightRoyalBlue));
+    border-radius: 25px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.result h2 {
+    color: var(--lightLavender);
+    font-size: 16pt;
+    font-weight: 700;
+}
+
+.result .overall {
+    background-image: linear-gradient(var(--violetBlue), var(--persianBlue));
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result .overall .primary {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.result .overall .secondary {
+    color: var(--lightLavender);
+    font-weight: 500;
+}
+
+.result h1 {
+    color: var(--white);
+    font-size: 20pt;
+    font-weight: 700;
+}
+
+.result p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--lightLavender);
+    text-align: center;
+}
+
+/*--summary--*/
+
+.summary {
+    display: grid;
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+.summary .title {
+    color: var(--darkGrayBlue);
+    font-weight: 800;
+    font-size: 17pt;
+    margin-bottom: 0.5rem;
+}
+
+.summary .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.summary .card .info {
+    gap: 0.5rem;
+    display: flex;
+}
+
+.summary .card .score p {
+    color: var(--darkGrayBlue);
+    font-weight: 800;
+}
+
+.summary .card .score span {
+    color: var(--lightGrayBlue);
+}
+
+.summary .card:nth-child(2) {
+    background-color: var(--veryLightRed);
+    color: var(--lightRed);
+}
+
+.summary .card:nth-child(3) {
+    background-color: var(--veryOrangeYellow);
+    color: var(--orangeYellow);
+}
+
+.summary .card:nth-child(4) {
+    background-color: var(--veryGreenTeal);
+    color: var(--greenTeal);
+}
+
+.summary .card:nth-child(5) {
+    background-color: var(--veryCobaltBlue);
+    color: var(--cobaltBlue);
+}
+
+.summary button {
+    margin-top: 1rem;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--darkGrayBlue);
+    color: var(--white);
+    font-size: 13pt;
+    padding: 0.3rem;
+    transition: all 0.3s ease-in;
+}
+
+.summary button:hover {
+    background-image: linear-gradient(var(--lightSlateBlue), var(--lightRoyalBlue));
+    cursor: pointer;
+}
+
+/*--footer--*/
+
+footer {
+    text-align: center;
+    min-width: 100vw;
+    font-size: 10pt;
+    color: var(--darkGrayBlue);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--lightRoyalBlue);
+}
+
+footer a:hover {
+    color: var(--lightSlateBlue);
+}
+
+/*--medias--*/
+
+@media screen and (max-width: 733px) {
+    .container {
+        justify-content: center;
+        align-content: flex-start;
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+
+    .result {
+        width: 100%;
+        border-radius: 0 0 23px 23px;
+    }
+
+    .summary {
+        width: 100%;
+    }
+
+    .summary .card, .summary button {
+        width: 100%;
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 734px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .container {
+        box-shadow:  18px 18px 38px #e3e3e3,
+                    -18px -18px 38px #ffffff;
+    }
+
+    .result {
+        max-width: 370px;
+    }
+
+    .summary .card {
+        width: 300px;
+    }
+}
