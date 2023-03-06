@@ -42,7 +42,6 @@ Mobile<br>
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 
 ## Author
 
