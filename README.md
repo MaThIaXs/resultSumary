@@ -26,7 +26,7 @@ Users should be able to:
 Desktop
 ![Screenshot_1](https://user-images.githubusercontent.com/113397248/223211877-8bd449d2-c3a3-44c7-a49d-d020c807c90d.jpg)
 
-Mobile
+Mobile<br>
 ![Screenshot_2](https://user-images.githubusercontent.com/113397248/223211931-0360cedb-5bc4-4073-9a3f-ede72f1f0c2a.jpg)
 
 ### Links
